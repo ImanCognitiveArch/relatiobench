@@ -8,7 +8,7 @@
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square)](pyproject.toml)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat-square)](LICENSE)
 [![Stage](https://img.shields.io/badge/Stage-engineering_alpha-orange?style=flat-square)](CHANGELOG.md)
-[![Registry](https://img.shields.io/badge/PyPI-publication_pending-lightgrey?style=flat-square)](docs/RELEASE.md)
+[![PyPI](https://img.shields.io/pypi/v/relatiobench?include_prereleases&style=flat-square)](https://pypi.org/project/relatiobench/)
 
 **Focus:** authored interaction scenarios for HRI research and virtual role-play.
 **Start here:** [comparison report](docs/demo/index.html) · [recorded CLI run](docs/assets/transcript.md) · [contract](docs/CONTRACT.md)
@@ -35,20 +35,20 @@ External systems can export the documented trace format for scoring.
 
 A local Python workbench for replaying authored interaction scenarios and comparing observed policy behavior. The alpha includes a social-robot activity and a virtual role-play fixture, an independent trace scorer, and a self-contained HTML comparison.
 
-**Status:** core acceptance passed on local Linux/Python 3.12 and Windows/Python 3.11 + 3.14; six CI jobs passed on Linux/Windows × Python 3.11/3.12/3.14. Licensed under Apache-2.0. This is an engineering alpha; public-index publication is tracked separately.
+**Status:** core acceptance passed on local Linux/Python 3.12 and Windows/Python 3.11 + 3.14; six CI jobs passed on Linux/Windows × Python 3.11/3.12/3.14. Licensed under Apache-2.0. This is an engineering alpha; version 0.1.0a1 is published on PyPI and a fresh registry install/demo has been verified.
 
-## Try the verified local artifact
+## Install the verified alpha from PyPI
 
-Python 3.11 or newer. Install the supplied wheel in a virtual environment:
+Python 3.11 or newer. Use a virtual environment and pin the alpha version:
 
 ```sh
-python -m pip install ./relatiobench-0.1.0a1-py3-none-any.whl
+python -m pip install relatiobench==0.1.0a1
 relatiobench demo --output ./demo-output
 ```
 
 Open `demo-output/index.html`. There are no runtime dependencies, network calls, LLM keys, ROS installation or GPU requirements. The demo writes two scenarios × three policies as JSON traces and scores, plus a comparison report. Built-in fixtures are deterministic; the seed is retained in the run contract for future policies, not used as evidence of stochastic simulation.
 
-The future public-index install command will be documented after an actual release; do not install a similarly named unrelated package.
+[PyPI release](https://pypi.org/project/relatiobench/0.1.0a1/) · [GitHub release and attached wheel](https://github.com/ImanCognitiveArch/relatiobench/releases/tag/v0.1.0a1). Exact-version registry install and demo evidence: [Windows verification](evidence/pypi-install-windows.json).
 
 ## What the comparison reveals
 

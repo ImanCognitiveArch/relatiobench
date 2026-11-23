@@ -1,8 +1,8 @@
-# Release procedure and current blockers
+# Release status and reproduction
 
 Iman Khorami explicitly approved Apache-2.0 on 2026-11-23. LICENSE contains the official Apache text; NOTICE identifies the owner. This approval applies to RelatioBench only.
 
-Current private repository: https://github.com/ImanCognitiveArch/relatiobench . Repository existence is not a public release. Core source initial verification commit: `9f7311116be07461bedc954bca42c6cc1a6745df`.
+Public repository: https://github.com/ImanCognitiveArch/relatiobench . Repository existence is not a public release. Core source initial verification commit: `9f7311116be07461bedc954bca42c6cc1a6745df`.
 
 Before public release:
 
@@ -19,3 +19,9 @@ ROS integration is separate: no `rclpy` was found in the inspected Linux Python 
 Direct file-tool access to `D:\RelatioBench` was denied by its configured allowed-directory list at build start. Build proceeded in the authorized independent workspace; Windows clean-install evidence lives under `D:\Research-Portfolio\RelatioBench-release-20261123`. Do not claim that updated source was delivered to `D:\RelatioBench` until permitted and verified.
 
 Browser rendering of the local file was blocked by the browser URL policy. The report is generated and structurally checked; visual browser inspection remains unverified. A CLI-session recording is separate evidence, not a substitute claim that the graphical report was browser-tested.
+
+
+## Verified PyPI publication — 2026-11-23
+Trusted Publisher added by the owner; publish workflow 45258208091 ran from tag v0.1.0a1 / commit 994595a1628d22d301b896f33769298d695f4c20. Both build and publish jobs succeeded. The exact PyPI version was installed with --no-cache-dir from https://pypi.org/simple in a fresh environment outside source; six demo runs and repeated trace/score equality passed. See evidence/pypi-install-windows.json. TestPyPI was not run; no TestPyPI success is claimed.
+
+PyPI distributions were rebuilt by the tagged GitHub Actions workflow; their hashes differ from the earlier Windows-built GitHub release attachments. Both sets have separate recorded hashes. The immutable tag remains on the reviewed source; later main documentation records actual publication.

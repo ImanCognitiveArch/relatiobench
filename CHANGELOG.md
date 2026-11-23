@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0a1 — unreleased
+## 0.1.0a1 — 2026-11-23
 
 - Standalone scenario validation and deterministic policy replay.
 - Independent imported-trace scoring and explicit denominators.

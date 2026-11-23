@@ -1,0 +1,113 @@
+{
+  "verified_at": "2026-11-23T20:21:20.998587+00:00",
+  "version": "0.1.0a1",
+  "project_url": "https://pypi.org/project/relatiobench/0.1.0a1/",
+  "registry_files": [
+    {
+      "filename": "relatiobench-0.1.0a1-py3-none-any.whl",
+      "sha256": "a99dd7e5383b307d04174a93f437e3efefb5170728e5d08d3f1ba82e68a009e4"
+    },
+    {
+      "filename": "relatiobench-0.1.0a1.tar.gz",
+      "sha256": "683195815bb927a821a6d039bf018b47170fc383a37250c53b0811e8c8eeb3f8"
+    }
+  ],
+  "fresh_install_outside_source": true,
+  "replay_and_scores_equal": true,
+  "demo_runs": [
+    {
+      "context": "social_robot",
+      "policy": "respectful",
+      "replay_equal": true,
+      "execution_seconds": 0.000605500001256587,
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "context": "social_robot",
+      "policy": "faulty",
+      "replay_equal": true,
+      "execution_seconds": 0.0005734999976994004,
+      "passed": false,
+      "violations": 3
+    },
+    {
+      "context": "social_robot",
+      "policy": "always_stop",
+      "replay_equal": true,
+      "execution_seconds": 0.0005410000012489036,
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "context": "virtual_roleplay",
+      "policy": "respectful",
+      "replay_equal": true,
+      "execution_seconds": 0.0005084000003989786,
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "context": "virtual_roleplay",
+      "policy": "faulty",
+      "replay_equal": true,
+      "execution_seconds": 0.0005277999989630189,
+      "passed": false,
+      "violations": 3
+    },
+    {
+      "context": "virtual_roleplay",
+      "policy": "always_stop",
+      "replay_equal": true,
+      "execution_seconds": 0.0005204999979468994,
+      "passed": true,
+      "violations": 0
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-pypi-lgxxce6r\\venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--index-url",
+        "https://pypi.org/simple",
+        "--no-cache-dir",
+        "--no-deps",
+        "relatiobench==0.1.0a1"
+      ],
+      "returncode": 0,
+      "stdout": "Collecting relatiobench==0.1.0a1\n  Downloading relatiobench-0.1.0a1-py3-none-any.whl.metadata (7.2 kB)\nDownloading relatiobench-0.1.0a1-py3-none-any.whl (21 kB)\nInstalling collected packages: relatiobench\nSuccessfully installed relatiobench-0.1.0a1\n",
+      "stderr": "\n[notice] A new release of pip is available: 24.0 -> 26.3\n[notice] To update, run: C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-pypi-lgxxce6r\\venv\\Scripts\\python.exe -m pip install --upgrade pip\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-pypi-lgxxce6r\\venv\\Scripts\\python.exe",
+        "-I",
+        "-m",
+        "relatiobench",
+        "demo",
+        "--output",
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-pypi-lgxxce6r\\first"
+      ],
+      "returncode": 0,
+      "stdout": "RelatioBench 0.1.0a1 | synthetic fixtures | no network/LLM/ROS required\nsocial_robot       respectful   violations=0 replay_equal=True\nsocial_robot       faulty       violations=3 replay_equal=True\nsocial_robot       always_stop  violations=0 replay_equal=True\nvirtual_roleplay   respectful   violations=0 replay_equal=True\nvirtual_roleplay   faulty       violations=3 replay_equal=True\nvirtual_roleplay   always_stop  violations=0 replay_equal=True\nReport: C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-pypi-lgxxce6r\\first\\index.html\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-pypi-lgxxce6r\\venv\\Scripts\\python.exe",
+        "-I",
+        "-m",
+        "relatiobench",
+        "demo",
+        "--output",
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-pypi-lgxxce6r\\second"
+      ],
+      "returncode": 0,
+      "stdout": "RelatioBench 0.1.0a1 | synthetic fixtures | no network/LLM/ROS required\nsocial_robot       respectful   violations=0 replay_equal=True\nsocial_robot       faulty       violations=3 replay_equal=True\nsocial_robot       always_stop  violations=0 replay_equal=True\nvirtual_roleplay   respectful   violations=0 replay_equal=True\nvirtual_roleplay   faulty       violations=3 replay_equal=True\nvirtual_roleplay   always_stop  violations=0 replay_equal=True\nReport: C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-pypi-lgxxce6r\\second\\index.html\n",
+      "stderr": ""
+    }
+  ]
+}
