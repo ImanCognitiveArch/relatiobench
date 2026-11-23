@@ -1,0 +1,13 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "wheel_sha256": "8d39ca46377eb568ca059c141e587eca72c1dd8c907586822223fda985dffe60",
+  "license_files": true,
+  "clean_install": true,
+  "replay_equal": true,
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "demo": "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-recovery-pw6pztrl\\first\\index.html"
+}

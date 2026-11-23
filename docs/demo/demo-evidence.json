@@ -1,0 +1,56 @@
+{
+  "version": "0.1.0a1",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "synthetic": true,
+  "runs": [
+    {
+      "context": "social_robot",
+      "policy": "respectful",
+      "replay_equal": true,
+      "execution_seconds": 0.00038507199997184216,
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "context": "social_robot",
+      "policy": "faulty",
+      "replay_equal": true,
+      "execution_seconds": 0.0003115909998996358,
+      "passed": false,
+      "violations": 3
+    },
+    {
+      "context": "social_robot",
+      "policy": "always_stop",
+      "replay_equal": true,
+      "execution_seconds": 0.00029312400010894635,
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "context": "virtual_roleplay",
+      "policy": "respectful",
+      "replay_equal": true,
+      "execution_seconds": 0.00047520899988739984,
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "context": "virtual_roleplay",
+      "policy": "faulty",
+      "replay_equal": true,
+      "execution_seconds": 0.0002666430000317632,
+      "passed": false,
+      "violations": 3
+    },
+    {
+      "context": "virtual_roleplay",
+      "policy": "always_stop",
+      "replay_equal": true,
+      "execution_seconds": 0.00025108999989242875,
+      "passed": true,
+      "violations": 0
+    }
+  ],
+  "duration_note": "Execution only; excludes installation/setup; not part of deterministic equality."
+}

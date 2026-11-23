@@ -8,3 +8,4 @@ demo-output/
 *.webm
 .env
 .env.*
+AGENTS.md

@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "engine_version": "0.1.0a1",
+  "scenario": {
+    "schema_version": 1,
+    "id": "virtual_roleplay",
+    "version": "1.0",
+    "session_id": "virtual_roleplay-fixture-v1",
+    "context": "virtual_roleplay",
+    "title": "A controlled scene, a participant-controlled exit",
+    "max_level": 3,
+    "events": [
+      {
+        "id": "virtual_roleplay-1",
+        "seq": 1,
+        "tick": 0,
+        "session_id": "virtual_roleplay-fixture-v1",
+        "kind": "CONSENT",
+        "data": {
+          "granted": true
+        },
+        "label": "Consent to role-play"
+      },
+      {
+        "id": "virtual_roleplay-2",
+        "seq": 2,
+        "tick": 1,
+        "session_id": "virtual_roleplay-fixture-v1",
+        "kind": "TASK",
+        "data": {
+          "level": 1
+        },
+        "label": "Present a neutral scene"
+      },
+      {
+        "id": "virtual_roleplay-3",
+        "seq": 3,
+        "tick": 2,
+        "session_id": "virtual_roleplay-fixture-v1",
+        "kind": "PAUSE",
+        "data": {},
+        "label": "Pause the scene"
+      },
+      {
+        "id": "virtual_roleplay-4",
+        "seq": 4,
+        "tick": 3,
+        "session_id": "virtual_roleplay-fixture-v1",
+        "kind": "TASK",
+        "data": {
+          "level": 2
+        },
+        "label": "Scene request during pause"
+      },
+      {
+        "id": "virtual_roleplay-5",
+        "seq": 5,
+        "tick": 4,
+        "session_id": "virtual_roleplay-fixture-v1",
+        "kind": "RESUME",
+        "data": {
+          "permitted": true
+        },
+        "label": "Explicit permission to resume"
+      },
+      {
+        "id": "virtual_roleplay-6",
+        "seq": 6,
+        "tick": 5,
+        "session_id": "virtual_roleplay-fixture-v1",
+        "kind": "TASK",
+        "data": {
+          "level": 7
+        },
+        "label": "Requested scene exceeds configured level"
+      },
+      {
+        "id": "virtual_roleplay-7",
+        "seq": 7,
+        "tick": 6,
+        "session_id": "virtual_roleplay-fixture-v1",
+        "kind": "WITHDRAW",
+        "data": {},
+        "label": "End this session"
+      },
+      {
+        "id": "virtual_roleplay-8",
+        "seq": 8,
+        "tick": 7,
+        "session_id": "virtual_roleplay-fixture-v1",
+        "kind": "RESUME",
+        "data": {
+          "permitted": true
+        },
+        "label": "Attempt to resume ended session"
+      },
+      {
+        "id": "virtual_roleplay-9",
+        "seq": 9,
+        "tick": 8,
+        "session_id": "virtual_roleplay-fixture-v1",
+        "kind": "CONSENT",
+        "data": {
+          "granted": true
+        },
+        "label": "New consent in ended session"
+      },
+      {
+        "id": "virtual_roleplay-10",
+        "seq": 10,
+        "tick": 9,
+        "session_id": "virtual_roleplay-fixture-v1",
+        "kind": "TASK",
+        "data": {
+          "level": 2
+        },
+        "label": "Scene request after withdrawal"
+      }
+    ]
+  },
+  "scenario_sha256": "85cf30a8b61105527c5d2e7e12ac11874dc9e7ba332b204cbacc58b612d33aca",
+  "policy": {
+    "id": "always_stop",
+    "version": "1"
+  },
+  "seed": 7,
+  "actions": [
+    {
+      "seq": 1,
+      "event_id": "virtual_roleplay-1",
+      "kind": "STOP"
+    },
+    {
+      "seq": 2,
+      "event_id": "virtual_roleplay-2",
+      "kind": "STOP"
+    },
+    {
+      "seq": 3,
+      "event_id": "virtual_roleplay-3",
+      "kind": "STOP"
+    },
+    {
+      "seq": 4,
+      "event_id": "virtual_roleplay-4",
+      "kind": "STOP"
+    },
+    {
+      "seq": 5,
+      "event_id": "virtual_roleplay-5",
+      "kind": "STOP"
+    },
+    {
+      "seq": 6,
+      "event_id": "virtual_roleplay-6",
+      "kind": "STOP"
+    },
+    {
+      "seq": 7,
+      "event_id": "virtual_roleplay-7",
+      "kind": "STOP"
+    },
+    {
+      "seq": 8,
+      "event_id": "virtual_roleplay-8",
+      "kind": "STOP"
+    },
+    {
+      "seq": 9,
+      "event_id": "virtual_roleplay-9",
+      "kind": "STOP"
+    },
+    {
+      "seq": 10,
+      "event_id": "virtual_roleplay-10",
+      "kind": "STOP"
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 
 A local Python workbench for replaying authored interaction scenarios and comparing observed policy behavior. The alpha includes a social-robot activity and a virtual role-play fixture, an independent trace scorer, and a self-contained HTML comparison.
 
-**Status:** engineering alpha under local verification. PyPI publication is not yet confirmed. Public licensing is pending the owner's decision.
+**Status:** core acceptance passed on local Linux/Python 3.12 and Windows/Python 3.11 + 3.14; six CI jobs passed on Linux/Windows × Python 3.11/3.12/3.14. Licensed under Apache-2.0. This is an engineering alpha; public-index publication is tracked separately.
 
 ## Try the verified local artifact
 
@@ -28,6 +28,10 @@ The future public-index install command will be documented after an actual relea
 | `always_stop` | Emit stop on every event | Zero violations, 0/2 eligible tasks completed |
 
 The last baseline matters: a policy that does nothing can avoid these violations while failing every permitted task. Completion and constraint adherence are separate metrics.
+
+## Recorded evidence
+
+[Recorded CLI transcript](docs/assets/transcript.md) · [raw asciicast](docs/assets/demo.cast) · [generated HTML report](docs/demo/index.html). These files come from an actual installed CLI run using synthetic fixtures. The CLI recording is not a browser screen recording or a physical robot demonstration.
 
 ## Your own scenario or trace
 
@@ -63,6 +67,10 @@ Build tooling is a development dependency; the installed package has no third-pa
 
 ## Evaluation request
 
-Run one fixture, inspect a flagged action, and tell us which workflow or failure mode the trace misses. Use the friction-report issue template when the public repository is available. Independent use and commercial demand remain unmeasured.
+Run one fixture, inspect a flagged action, and tell us which workflow or failure mode the trace misses. Use the friction-report issue template in this repository. Independent use and commercial demand remain unmeasured.
 
 Iman Khorami · Psychology undergraduate, research collaborator, and developer of psychology-focused and cognitive-architecture software.
+
+## License
+
+Copyright 2026 Iman Khorami. Licensed under [Apache-2.0](LICENSE); see [NOTICE](NOTICE).

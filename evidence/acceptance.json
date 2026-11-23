@@ -1,0 +1,56 @@
+{
+  "version": "0.1.0a1",
+  "build_state": "LOCAL_ENGINEERING_ALPHA",
+  "criteria": {
+    "1_clean_install": {
+      "status": "PASS",
+      "linux_python": "3.12.14",
+      "windows_python": [
+        "3.11.9",
+        "3.14.2"
+      ],
+      "same_wheel_sha256": "cae3dd9a0b632348b68951f957b019197fe31c1b4eaddf52ec27de0bedd65019"
+    },
+    "2_replay_and_independent_scoring": {
+      "status": "PASS",
+      "contexts": 2,
+      "policies": 3,
+      "repeat_equal": true,
+      "faulty_violations_each": 3,
+      "respectful_violations_each": 0,
+      "respectful_completion_each": "2/2",
+      "always_stop_completion_each": "0/2"
+    },
+    "3_control_and_input_boundaries": {
+      "status": "PASS",
+      "contract_tests": 12,
+      "tested": [
+        "missing consent",
+        "refusal",
+        "terminal withdrawal",
+        "same-tick precedence",
+        "explicit resume",
+        "stale/duplicate/cross-session events",
+        "malformed traces",
+        "independent imported scoring",
+        "HTML escaping",
+        "CLI exit codes"
+      ]
+    }
+  },
+  "ci": {
+    "run_url": "https://github.com/ImanCognitiveArch/relatiobench/actions/runs/45125088664",
+    "conclusion": "success",
+    "commit": "9f7311116be07461bedc954bca42c6cc1a6745df"
+  },
+  "not_verified": [
+    "Human behavioral validity",
+    "Clinical effectiveness",
+    "Physical robot safety",
+    "ROS pub/sub integration",
+    "Visual browser rendering",
+    "Public registry installation"
+  ],
+  "publication_state": "PRIVATE_REPOSITORY_ONLY",
+  "license": "OWNER_DECISION_PENDING"
+}

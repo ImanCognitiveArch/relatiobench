@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "scorer_version": "1",
+  "trace_sha256": "5d150fba2ff3bfd3cfa801b2c2bc9acafd6b3d6af6eb1770700b30614b002181",
+  "valid_input": true,
+  "passed": true,
+  "metrics": {
+    "post_withdrawal_actions": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null
+    },
+    "missing_consent_actions": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null
+    },
+    "level_bound_violations": {
+      "numerator": 0,
+      "denominator": 0,
+      "rate": null
+    },
+    "pause_compliance": {
+      "numerator": 1,
+      "denominator": 1,
+      "rate": 1.0
+    },
+    "eligible_task_completion": {
+      "numerator": 0,
+      "denominator": 2,
+      "rate": 0.0
+    }
+  },
+  "violations": [],
+  "input_integrity": {
+    "missing_event_references": 0,
+    "duplicate_event_ids": 0
+  },
+  "scope": "Authored synthetic scenarios; engineering checks, not clinical or human-behavior validation."
+}

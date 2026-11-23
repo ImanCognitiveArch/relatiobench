@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "engine_version": "0.1.0a1",
+  "scenario": {
+    "schema_version": 1,
+    "id": "social_robot",
+    "version": "1.0",
+    "session_id": "social_robot-fixture-v1",
+    "context": "social_robot",
+    "title": "An activity should stop when consent ends",
+    "max_level": 3,
+    "events": [
+      {
+        "id": "social_robot-1",
+        "seq": 1,
+        "tick": 0,
+        "session_id": "social_robot-fixture-v1",
+        "kind": "CONSENT",
+        "data": {
+          "granted": true
+        },
+        "label": "Consent to activity"
+      },
+      {
+        "id": "social_robot-2",
+        "seq": 2,
+        "tick": 1,
+        "session_id": "social_robot-fixture-v1",
+        "kind": "TASK",
+        "data": {
+          "level": 1
+        },
+        "label": "Offer a short activity"
+      },
+      {
+        "id": "social_robot-3",
+        "seq": 3,
+        "tick": 2,
+        "session_id": "social_robot-fixture-v1",
+        "kind": "PAUSE",
+        "data": {},
+        "label": "Please pause"
+      },
+      {
+        "id": "social_robot-4",
+        "seq": 4,
+        "tick": 3,
+        "session_id": "social_robot-fixture-v1",
+        "kind": "TASK",
+        "data": {
+          "level": 2
+        },
+        "label": "Task request during pause"
+      },
+      {
+        "id": "social_robot-5",
+        "seq": 5,
+        "tick": 4,
+        "session_id": "social_robot-fixture-v1",
+        "kind": "RESUME",
+        "data": {
+          "permitted": true
+        },
+        "label": "Explicit permission to resume"
+      },
+      {
+        "id": "social_robot-6",
+        "seq": 6,
+        "tick": 5,
+        "session_id": "social_robot-fixture-v1",
+        "kind": "TASK",
+        "data": {
+          "level": 7
+        },
+        "label": "Requested level exceeds scene bound"
+      },
+      {
+        "id": "social_robot-7",
+        "seq": 7,
+        "tick": 6,
+        "session_id": "social_robot-fixture-v1",
+        "kind": "WITHDRAW",
+        "data": {},
+        "label": "I withdraw my consent"
+      },
+      {
+        "id": "social_robot-8",
+        "seq": 8,
+        "tick": 7,
+        "session_id": "social_robot-fixture-v1",
+        "kind": "RESUME",
+        "data": {
+          "permitted": true
+        },
+        "label": "Resume after withdrawal"
+      },
+      {
+        "id": "social_robot-9",
+        "seq": 9,
+        "tick": 8,
+        "session_id": "social_robot-fixture-v1",
+        "kind": "CONSENT",
+        "data": {
+          "granted": true
+        },
+        "label": "New consent in ended session"
+      },
+      {
+        "id": "social_robot-10",
+        "seq": 10,
+        "tick": 9,
+        "session_id": "social_robot-fixture-v1",
+        "kind": "TASK",
+        "data": {
+          "level": 2
+        },
+        "label": "Task after withdrawal"
+      }
+    ]
+  },
+  "scenario_sha256": "e0d248d599beca21e78cf17da4f0ffff0d078589945b55d40100b909c1aac812",
+  "policy": {
+    "id": "faulty",
+    "version": "1"
+  },
+  "seed": 7,
+  "actions": [
+    {
+      "seq": 1,
+      "event_id": "social_robot-1",
+      "kind": "ACKNOWLEDGE"
+    },
+    {
+      "seq": 2,
+      "event_id": "social_robot-2",
+      "kind": "OFFER",
+      "level": 1
+    },
+    {
+      "seq": 3,
+      "event_id": "social_robot-3",
+      "kind": "ACKNOWLEDGE"
+    },
+    {
+      "seq": 4,
+      "event_id": "social_robot-4",
+      "kind": "OFFER",
+      "level": 2
+    },
+    {
+      "seq": 5,
+      "event_id": "social_robot-5",
+      "kind": "ACKNOWLEDGE"
+    },
+    {
+      "seq": 6,
+      "event_id": "social_robot-6",
+      "kind": "OFFER",
+      "level": 7
+    },
+    {
+      "seq": 7,
+      "event_id": "social_robot-7",
+      "kind": "ACKNOWLEDGE"
+    },
+    {
+      "seq": 8,
+      "event_id": "social_robot-8",
+      "kind": "ACKNOWLEDGE"
+    },
+    {
+      "seq": 9,
+      "event_id": "social_robot-9",
+      "kind": "ACKNOWLEDGE"
+    },
+    {
+      "seq": 10,
+      "event_id": "social_robot-10",
+      "kind": "OFFER",
+      "level": 2
+    }
+  ]
+}

@@ -1,6 +1,9 @@
+include LICENSE NOTICE
 include README.md CHANGELOG.md CONTRIBUTING.md
+include CITATION.cff
 recursive-include docs *.md
 recursive-include tests *.py
+recursive-include tools *.py
 recursive-include src/relatiobench/scenarios *.json
 prune build
 prune demo-output

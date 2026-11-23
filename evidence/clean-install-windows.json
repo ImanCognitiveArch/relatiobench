@@ -1,0 +1,23 @@
+{
+  "wheel": "relatiobench-0.1.0a1-py3-none-any.whl",
+  "wheel_sha256": "cae3dd9a0b632348b68951f957b019197fe31c1b4eaddf52ec27de0bedd65019",
+  "platform": "Windows",
+  "outside_source": true,
+  "runs": [
+    {
+      "version": "3.11",
+      "python": "3.11.9",
+      "contract_tests_passed": 12,
+      "replay_equal": true,
+      "offline_demo": true
+    },
+    {
+      "version": "3.14",
+      "python": "3.14.2",
+      "contract_tests_passed": 12,
+      "replay_equal": true,
+      "offline_demo": true
+    }
+  ],
+  "source": "Observed Desktop Commander Windows verification, clean-install-windows.json; recorded representation omits local module paths."
+}
