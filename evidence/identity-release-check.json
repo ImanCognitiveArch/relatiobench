@@ -1,0 +1,31 @@
+{
+  "cff_schema": "1.2.0 validation passed using cffconvert",
+  "orcid": "owner supplied; checksum valid",
+  "runtime_contract_tests": 12,
+  "twine_check": "wheel and sdist passed",
+  "license_archive_checks": true,
+  "source_policy_files_present": true,
+  "clean_install_outside_source": true,
+  "demo_exit_codes": [
+    0,
+    0
+  ],
+  "x_post_character_counts": [
+    252,
+    274,
+    241
+  ],
+  "artifacts": [
+    {
+      "file": "relatiobench-0.1.0a1-py3-none-any.whl",
+      "path": "D:\\Research-Portfolio\\RelatioBench-Recovery-20261123\\dist\\identity-ready\\relatiobench-0.1.0a1-py3-none-any.whl",
+      "sha256": "08897ffa166bce69075dd1bda1532cacbf613950afebf503692db396b7709f9b"
+    },
+    {
+      "file": "relatiobench-0.1.0a1.tar.gz",
+      "path": "D:\\Research-Portfolio\\RelatioBench-Recovery-20261123\\dist\\identity-ready\\relatiobench-0.1.0a1.tar.gz",
+      "sha256": "6e17662a0832bd752a5f9a849acf7af390cb18f01195b956490134ecfe416bd7"
+    }
+  ],
+  "scope": "Engineering checks on synthetic fixtures. Registry upload and browser rendering not verified."
+}

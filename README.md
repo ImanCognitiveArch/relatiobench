@@ -1,6 +1,37 @@
-# RelatioBench
+<div align="center">
+<h1>RelatioBench</h1>
+<p><strong>Replay the interaction. Inspect the decision.</strong></p>
+<p>A local workbench for reproducible interaction-policy checks.</p>
+</div>
 
-**Replay the interaction. Inspect the decision.**
+[![CI](https://github.com/ImanCognitiveArch/relatiobench/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ImanCognitiveArch/relatiobench/actions/workflows/ci.yml)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square)](pyproject.toml)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat-square)](LICENSE)
+[![Stage](https://img.shields.io/badge/Stage-engineering_alpha-orange?style=flat-square)](CHANGELOG.md)
+[![Registry](https://img.shields.io/badge/PyPI-publication_pending-lightgrey?style=flat-square)](docs/RELEASE.md)
+
+**Focus:** authored interaction scenarios for HRI research and virtual role-play.
+**Start here:** [comparison report](docs/demo/index.html) · [recorded CLI run](docs/assets/transcript.md) · [contract](docs/CONTRACT.md)
+
+## Architecture at a glance
+
+```mermaid
+flowchart TD
+  subgraph Current["Implemented in this alpha"]
+    S["Versioned synthetic scenarios"] --> R["Deterministic replay"]
+    P["Example policies"] --> R
+    R --> T["Recorded event and action traces"]
+    I["Imported traces"] --> V["Trace validation"]
+    T --> V
+    V --> E["Independent rule scorer"]
+    E --> O["JSON metrics and HTML comparison"]
+  end
+  F["Future ROS 2 / simulator adapter"] -. "planned; not implemented" .-> I
+```
+
+The two built-in contexts share this core. No ROS 2 node, Gazebo connection,
+patient model, emotion inference or physical robot control is implemented.
+External systems can export the documented trace format for scoring.
 
 A local Python workbench for replaying authored interaction scenarios and comparing observed policy behavior. The alpha includes a social-robot activity and a virtual role-play fixture, an independent trace scorer, and a self-contained HTML comparison.
 

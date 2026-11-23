@@ -1,10 +1,19 @@
 cff-version: 1.2.0
-message: "If you use RelatioBench in research, cite the software version and describe its synthetic-fixture limitations."
+message: "If you use RelatioBench, cite the software version and describe its synthetic-fixture limitations."
 type: software
 title: "RelatioBench: Replay the interaction. Inspect the decision."
 version: 0.1.0a1
+license: Apache-2.0
 authors:
   - family-names: Khorami
     given-names: Iman
+    orcid: "https://orcid.org/0009-0006-8257-4535"
 repository-code: "https://github.com/ImanCognitiveArch/relatiobench"
-abstract: "A local Python workbench for authored interaction-policy scenarios, deterministic replay, independent trace scoring, and inspectable reports. The alpha does not establish human or clinical validity."
+url: "https://github.com/ImanCognitiveArch/relatiobench"
+abstract: "A local Python workbench for authored synthetic interaction scenarios, deterministic policy replay, independent trace scoring, and inspectable reports. This engineering alpha does not establish human or clinical validity."
+keywords:
+  - human-robot-interaction
+  - interaction-policy-evaluation
+  - deterministic-replay
+  - synthetic-scenarios
+  - reproducible-research
