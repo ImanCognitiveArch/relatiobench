@@ -1,0 +1,158 @@
+{
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "wheel": "relatiobench-0.1.0a1-py3-none-any.whl",
+  "wheel_sha256": "cae3dd9a0b632348b68951f957b019197fe31c1b4eaddf52ec27de0bedd65019",
+  "wheel_contents": [
+    "relatiobench/__init__.py",
+    "relatiobench/__main__.py",
+    "relatiobench/cli.py",
+    "relatiobench/engine.py",
+    "relatiobench/report.py",
+    "relatiobench/schema.py",
+    "relatiobench/scoring.py",
+    "relatiobench/scenarios/social_robot.json",
+    "relatiobench/scenarios/virtual_roleplay.json",
+    "relatiobench-0.1.0a1.dist-info/METADATA",
+    "relatiobench-0.1.0a1.dist-info/WHEEL",
+    "relatiobench-0.1.0a1.dist-info/entry_points.txt",
+    "relatiobench-0.1.0a1.dist-info/top_level.txt",
+    "relatiobench-0.1.0a1.dist-info/RECORD"
+  ],
+  "clean_install_outside_source": true,
+  "replay_and_metric_equality": true,
+  "socket_denied_demo": true,
+  "fixture_runs": [
+    {
+      "context": "social_robot",
+      "policy": "respectful",
+      "replay_equal": true,
+      "execution_seconds": 0.0003623979996518756,
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "context": "social_robot",
+      "policy": "faulty",
+      "replay_equal": true,
+      "execution_seconds": 0.0002762680001069384,
+      "passed": false,
+      "violations": 3
+    },
+    {
+      "context": "social_robot",
+      "policy": "always_stop",
+      "replay_equal": true,
+      "execution_seconds": 0.0002464030003466178,
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "context": "virtual_roleplay",
+      "policy": "respectful",
+      "replay_equal": true,
+      "execution_seconds": 0.00032056500003818655,
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "context": "virtual_roleplay",
+      "policy": "faulty",
+      "replay_equal": true,
+      "execution_seconds": 0.0002847010000550654,
+      "passed": false,
+      "violations": 3
+    },
+    {
+      "context": "virtual_roleplay",
+      "policy": "always_stop",
+      "replay_equal": true,
+      "execution_seconds": 0.0002447099996061297,
+      "passed": true,
+      "violations": 0
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-c",
+        "from setuptools import build_meta; build_meta.build_wheel('dist'); build_meta.build_sdist('dist')"
+      ],
+      "cwd": "/workspace/scratch/75de7fac2a9e/relatiobench",
+      "returncode": 0,
+      "stdout": "running bdist_wheel\nrunning build\nrunning build_py\nrunning egg_info\nwriting src/relatiobench.egg-info/PKG-INFO\nwriting dependency_links to src/relatiobench.egg-info/dependency_links.txt\nwriting entry points to src/relatiobench.egg-info/entry_points.txt\nwriting top-level names to src/relatiobench.egg-info/top_level.txt\nreading manifest file 'src/relatiobench.egg-info/SOURCES.txt'\nreading manifest template 'MANIFEST.in'\nwriting manifest file 'src/relatiobench.egg-info/SOURCES.txt'\ninstalling to build/bdist.linux-x86_64/wheel\nrunning install\nrunning install_lib\ncreating build/bdist.linux-x86_64/wheel\ncreating build/bdist.linux-x86_64/wheel/relatiobench\ncopying build/lib/relatiobench/schema.py -> build/bdist.linux-x86_64/wheel/./relatiobench\ncopying build/lib/relatiobench/__main__.py -> build/bdist.linux-x86_64/wheel/./relatiobench\ncopying build/lib/relatiobench/__init__.py -> build/bdist.linux-x86_64/wheel/./relatiobench\ncreating build/bdist.linux-x86_64/wheel/relatiobench/scenarios\ncopying build/lib/relatiobench/scenarios/virtual_roleplay.json -> build/bdist.linux-x86_64/wheel/./relatiobench/scenarios\ncopying build/lib/relatiobench/scenarios/social_robot.json -> build/bdist.linux-x86_64/wheel/./relatiobench/scenarios\ncopying build/lib/relatiobench/report.py -> build/bdist.linux-x86_64/wheel/./relatiobench\ncopying build/lib/relatiobench/scoring.py -> build/bdist.linux-x86_64/wheel/./relatiobench\ncopying build/lib/relatiobench/cli.py -> build/bdist.linux-x86_64/wheel/./relatiobench\ncopying build/lib/relatiobench/engine.py -> build/bdist.linux-x86_64/wheel/./relatiobench\nrunning install_egg_info\nCopying src/relatiobench.egg-info to build/bdist.linux-x86_64/wheel/./relatiobench-0.1.0a1-py3.12.egg-info\nrunning install_scripts\ncreating build/bdist.linux-x86_64/wheel/relatiobench-0.1.0a1.dist-info/WHEEL\ncreating '/workspace/scratch/75de7fac2a9e/relatiobench/dist/.tmp-jyo6st4d/relatiobench-0.1.0a1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it\nadding 'relatiobench/__init__.py'\nadding 'relatiobench/__main__.py'\nadding 'relatiobench/cli.py'\nadding 'relatiobench/engine.py'\nadding 'relatiobench/report.py'\nadding 'relatiobench/schema.py'\nadding 'relatiobench/scoring.py'\nadding 'relatiobench/scenarios/social_robot.json'\nadding 'relatiobench/scenarios/virtual_roleplay.json'\nadding 'relatiobench-0.1.0a1.dist-info/METADATA'\nadding 'relatiobench-0.1.0a1.dist-info/WHEEL'\nadding 'relatiobench-0.1.0a1.dist-info/entry_points.txt'\nadding 'relatiobench-0.1.0a1.dist-info/top_level.txt'\nadding 'relatiobench-0.1.0a1.dist-info/RECORD'\nremoving build/bdist.linux-x86_64/wheel\nrunning sdist\nrunning egg_info\nwriting src/relatiobench.egg-info/PKG-INFO\nwriting dependency_links to src/relatiobench.egg-info/dependency_links.txt\nwriting entry points to src/relatiobench.egg-info/entry_points.txt\nwriting top-level names to src/relatiobench.egg-info/top_level.txt\nreading manifest file 'src/relatiobench.egg-info/SOURCES.txt'\nreading manifest template 'MANIFEST.in'\nwriting manifest file 'src/relatiobench.egg-info/SOURCES.txt'\nrunning check\ncreating relatiobench-0.1.0a1\ncreating relatiobench-0.1.0a1/docs\ncreating relatiobench-0.1.0a1/src/relatiobench\ncreating relatiobench-0.1.0a1/src/relatiobench.egg-info\ncreating relatiobench-0.1.0a1/src/relatiobench/scenarios\ncreating relatiobench-0.1.0a1/tests\ncopying files to relatiobench-0.1.0a1...\ncopying CHANGELOG.md -> relatiobench-0.1.0a1\ncopying CONTRIBUTING.md -> relatiobench-0.1.0a1\ncopying MANIFEST.in -> relatiobench-0.1.0a1\ncopying README.md -> relatiobench-0.1.0a1\ncopying pyproject.toml -> relatiobench-0.1.0a1\ncopying docs/ARCHITECTURE.md -> relatiobench-0.1.0a1/docs\ncopying docs/CONTRACT.md -> relatiobench-0.1.0a1/docs\ncopying docs/REPRODUCE.md -> relatiobench-0.1.0a1/docs\ncopying src/relatiobench/__init__.py -> relatiobench-0.1.0a1/src/relatiobench\ncopying src/relatiobench/__main__.py -> relatiobench-0.1.0a1/src/relatiobench\ncopying src/relatiobench/cli.py -> relatiobench-0.1.0a1/src/relatiobench\ncopying src/relatiobench/engine.py -> relatiobench-0.1.0a1/src/relatiobench\ncopying src/relatiobench/report.py -> relatiobench-0.1.0a1/src/relatiobench\ncopying src/relatiobench/schema.py -> relatiobench-0.1.0a1/src/relatiobench\ncopying src/relatiobench/scoring.py -> relatiobench-0.1.0a1/src/relatiobench\ncopying src/relatiobench.egg-info/PKG-INFO -> relatiobench-0.1.0a1/src/relatiobench.egg-info\ncopying src/relatiobench.egg-info/SOURCES.txt -> relatiobench-0.1.0a1/src/relatiobench.egg-info\ncopying src/relatiobench.egg-info/dependency_links.txt -> relatiobench-0.1.0a1/src/relatiobench.egg-info\ncopying src/relatiobench.egg-info/entry_points.txt -> relatiobench-0.1.0a1/src/relatiobench.egg-info\ncopying src/relatiobench.egg-info/top_level.txt -> relatiobench-0.1.0a1/src/relatiobench.egg-info\ncopying src/relatiobench/scenarios/social_robot.json -> relatiobench-0.1.0a1/src/relatiobench/scenarios\ncopying src/relatiobench/scenarios/virtual_roleplay.json -> relatiobench-0.1.0a1/src/relatiobench/scenarios\ncopying tests/test_contract.py -> relatiobench-0.1.0a1/tests\nWriting relatiobench-0.1.0a1/setup.cfg\nCreating tar archive\nremoving 'relatiobench-0.1.0a1' (and everything under it)\n",
+      "stderr": "no previously-included directories found matching 'build'\nno previously-included directories found matching 'demo-output'\nwarning: no previously-included files matching '__pycache__' found anywhere in distribution\nwarning: no previously-included files matching '*.py[cod]' found anywhere in distribution\nwarning: no previously-included files matching '.env' found anywhere in distribution\nwarning: no previously-included files matching '.env.*' found anywhere in distribution\nno previously-included directories found matching 'build'\nno previously-included directories found matching 'demo-output'\nwarning: no previously-included files matching '__pycache__' found anywhere in distribution\nwarning: no previously-included files matching '*.py[cod]' found anywhere in distribution\nwarning: no previously-included files matching '.env' found anywhere in distribution\nwarning: no previously-included files matching '.env.*' found anywhere in distribution\n"
+    },
+    {
+      "command": [
+        "/tmp/relatiobench-clean-v7bl7jws/venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-deps",
+        "--no-index",
+        "/workspace/scratch/75de7fac2a9e/relatiobench/dist/relatiobench-0.1.0a1-py3-none-any.whl"
+      ],
+      "cwd": "/tmp/relatiobench-clean-v7bl7jws",
+      "returncode": 0,
+      "stdout": "Processing /workspace/scratch/75de7fac2a9e/relatiobench/dist/relatiobench-0.1.0a1-py3-none-any.whl\nInstalling collected packages: relatiobench\nSuccessfully installed relatiobench-0.1.0a1\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/relatiobench-clean-v7bl7jws/venv/bin/python",
+        "-I",
+        "-m",
+        "relatiobench",
+        "demo",
+        "--output",
+        "/tmp/relatiobench-clean-v7bl7jws/first"
+      ],
+      "cwd": "/tmp/relatiobench-clean-v7bl7jws",
+      "returncode": 0,
+      "stdout": "RelatioBench 0.1.0a1 | synthetic fixtures | no network/LLM/ROS required\nsocial_robot       respectful   violations=0 replay_equal=True\nsocial_robot       faulty       violations=3 replay_equal=True\nsocial_robot       always_stop  violations=0 replay_equal=True\nvirtual_roleplay   respectful   violations=0 replay_equal=True\nvirtual_roleplay   faulty       violations=3 replay_equal=True\nvirtual_roleplay   always_stop  violations=0 replay_equal=True\nReport: /tmp/relatiobench-clean-v7bl7jws/first/index.html\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/relatiobench-clean-v7bl7jws/venv/bin/python",
+        "-I",
+        "-m",
+        "relatiobench",
+        "demo",
+        "--output",
+        "/tmp/relatiobench-clean-v7bl7jws/second"
+      ],
+      "cwd": "/tmp/relatiobench-clean-v7bl7jws",
+      "returncode": 0,
+      "stdout": "RelatioBench 0.1.0a1 | synthetic fixtures | no network/LLM/ROS required\nsocial_robot       respectful   violations=0 replay_equal=True\nsocial_robot       faulty       violations=3 replay_equal=True\nsocial_robot       always_stop  violations=0 replay_equal=True\nvirtual_roleplay   respectful   violations=0 replay_equal=True\nvirtual_roleplay   faulty       violations=3 replay_equal=True\nvirtual_roleplay   always_stop  violations=0 replay_equal=True\nReport: /tmp/relatiobench-clean-v7bl7jws/second/index.html\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/relatiobench-clean-v7bl7jws/venv/bin/python",
+        "-I",
+        "-c",
+        "import socket; socket.socket.connect=lambda *a,**k: (_ for _ in ()).throw(RuntimeError('network denied')); from relatiobench.cli import main; raise SystemExit(main(['demo','--output','offline']))"
+      ],
+      "cwd": "/tmp/relatiobench-clean-v7bl7jws",
+      "returncode": 0,
+      "stdout": "RelatioBench 0.1.0a1 | synthetic fixtures | no network/LLM/ROS required\nsocial_robot       respectful   violations=0 replay_equal=True\nsocial_robot       faulty       violations=3 replay_equal=True\nsocial_robot       always_stop  violations=0 replay_equal=True\nvirtual_roleplay   respectful   violations=0 replay_equal=True\nvirtual_roleplay   faulty       violations=3 replay_equal=True\nvirtual_roleplay   always_stop  violations=0 replay_equal=True\nReport: /tmp/relatiobench-clean-v7bl7jws/offline/index.html\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/relatiobench-clean-v7bl7jws/venv/bin/python",
+        "-I",
+        "-c",
+        "import relatiobench; print(relatiobench.__file__)"
+      ],
+      "cwd": "/tmp/relatiobench-clean-v7bl7jws",
+      "returncode": 0,
+      "stdout": "/tmp/relatiobench-clean-v7bl7jws/venv/lib/python3.12/site-packages/relatiobench/__init__.py\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Engineering fixtures; no human, clinical, physical robot or ROS integration validation."
+}

@@ -1,0 +1,7 @@
+include README.md CHANGELOG.md CONTRIBUTING.md
+recursive-include docs *.md
+recursive-include tests *.py
+recursive-include src/relatiobench/scenarios *.json
+prune build
+prune demo-output
+global-exclude __pycache__ *.py[cod] .env .env.*

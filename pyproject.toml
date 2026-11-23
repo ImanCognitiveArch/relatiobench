@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "relatiobench"
+version = "0.1.0a1"
+description = "Replay synthetic interaction scenarios and inspect policy behavior."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Iman Khorami"}]
+classifiers = ["Development Status :: 3 - Alpha", "Intended Audience :: Science/Research", "Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+dependencies = []
+
+[project.scripts]
+relatiobench = "relatiobench.cli:main"
+
+[project.urls]
+Repository = "https://github.com/ImanCognitiveArch/relatiobench"
+Issues = "https://github.com/ImanCognitiveArch/relatiobench/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+relatiobench = ["scenarios/*.json"]
