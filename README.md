@@ -10,6 +10,8 @@
 [![Stage](https://img.shields.io/badge/Stage-engineering_alpha-orange?style=flat-square)](CHANGELOG.md)
 [![PyPI](https://img.shields.io/pypi/v/relatiobench?include_prereleases&style=flat-square)](https://pypi.org/project/relatiobench/)
 
+**Preview without installing:** [Open the synthetic before/after audit](https://imancognitivearch.github.io/relatiobench/)
+
 **Focus:** authored interaction scenarios for HRI research and virtual role-play.
 **Start here:** [comparison report](docs/demo/index.html) · [recorded CLI run](docs/assets/transcript.md) · [contract](docs/CONTRACT.md)
 
@@ -58,7 +60,7 @@ External systems can export the documented trace format for scoring.
 
 A local Python workbench for replaying authored interaction scenarios and comparing observed policy behavior. The alpha includes a social-robot activity and a virtual role-play fixture, an independent trace scorer, and a self-contained HTML comparison.
 
-**Status:** core acceptance passed on local Linux/Python 3.12 and Windows/Python 3.11 + 3.14; six CI jobs passed on Linux/Windows × Python 3.11/3.12/3.14. Licensed under Apache-2.0. This is an engineering alpha; version 0.1.0a1 is published and verified; 0.1.0a2 is the additive annotated-chat release.
+**Status:** core acceptance passed on local Linux/Python 3.12 and Windows/Python 3.11 + 3.14; six CI jobs passed on Linux/Windows × Python 3.11/3.12/3.14. Licensed under Apache-2.0. This is an engineering alpha; version 0.1.0a2 is published on PyPI and a fresh exact-version registry install, audit and repeated output equality have been verified. [Registry evidence](evidence/pypi-install-a2-windows.json).
 
 ## Install the verified alpha from PyPI
 

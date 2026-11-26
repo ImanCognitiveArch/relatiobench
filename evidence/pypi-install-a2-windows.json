@@ -1,0 +1,140 @@
+{
+  "version": "0.1.0a2",
+  "checked_at": "2026-11-26T02:45:40.252016+00:00",
+  "steps": [
+    {
+      "command": [
+        "D:\\Research-Portfolio\\RelatioBench-Recovery-20261123\\.venv-metadata\\Scripts\\python.exe",
+        "-m",
+        "venv",
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\venv"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--index-url",
+        "https://pypi.org/simple/",
+        "--no-cache-dir",
+        "--no-deps",
+        "relatiobench==0.1.0a2"
+      ],
+      "exit_code": 0,
+      "stdout": "Looking in indexes: https://pypi.org/simple/\nCollecting relatiobench==0.1.0a2\n  Downloading relatiobench-0.1.0a2-py3-none-any.whl.metadata (8.6 kB)\nDownloading relatiobench-0.1.0a2-py3-none-any.whl (27 kB)\nInstalling collected packages: relatiobench\nSuccessfully installed relatiobench-0.1.0a2\n",
+      "stderr": "\n[notice] A new release of pip is available: 24.0 -> 26.3\n[notice] To update, run: C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\venv\\Scripts\\python.exe -m pip install --upgrade pip\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\venv\\Scripts\\python.exe",
+        "-m",
+        "relatiobench.cli",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "0.1.0a2\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\venv\\Scripts\\python.exe",
+        "-m",
+        "relatiobench.cli",
+        "quickstart",
+        "--output",
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\first"
+      ],
+      "exit_code": 0,
+      "stdout": "SYNTHETIC annotated examples: before=2 findings; after=0. Not a live chatbot test.\nOpen: C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\first\\before\\index.html\nThen: C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\first\\after\\index.html\nEdit a copy of before.chat.json for your own explicitly labeled log; guide: https://github.com/ImanCognitiveArch/relatiobench/blob/main/docs/CHAT_AUDIT.md\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\venv\\Scripts\\python.exe",
+        "-m",
+        "relatiobench.cli",
+        "quickstart",
+        "--output",
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\repeat"
+      ],
+      "exit_code": 0,
+      "stdout": "SYNTHETIC annotated examples: before=2 findings; after=0. Not a live chatbot test.\nOpen: C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\repeat\\before\\index.html\nThen: C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\repeat\\after\\index.html\nEdit a copy of before.chat.json for your own explicitly labeled log; guide: https://github.com/ImanCognitiveArch/relatiobench/blob/main/docs/CHAT_AUDIT.md\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\venv\\Scripts\\python.exe",
+        "-m",
+        "relatiobench.cli",
+        "audit",
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\first\\before.chat.json",
+        "--output",
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\audit"
+      ],
+      "exit_code": 1,
+      "stdout": "Findings: 2 | report: C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\audit\\index.html\nLocal only. Human annotations; supported rules only. Exit 1 means findings.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\venv\\Scripts\\python.exe",
+        "-m",
+        "relatiobench.cli",
+        "compare",
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\first\\before\\audit.json",
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\first\\after\\audit.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"comparison_schema_version\": 1,\n  \"before_trace_sha256\": \"cdba04dc5e578bb10a40bad024b6b0e5cef57a73968c9fc73b74349b3c54110f\",\n  \"after_trace_sha256\": \"51a26cba0e12e9f90e94c2fac650e7b06d7788d653e374ab4d69a57dfa224548\",\n  \"before_findings\": 2,\n  \"after_findings\": 0,\n  \"increased_violation_codes\": {},\n  \"eligible_completion_decreased\": false,\n  \"regression\": false,\n  \"scope\": \"Matched annotated inputs only; fewer findings does not prove real-world improvement.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\venv\\Scripts\\python.exe",
+        "-m",
+        "relatiobench.cli",
+        "demo",
+        "--output",
+        "C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\core"
+      ],
+      "exit_code": 0,
+      "stdout": "RelatioBench 0.1.0a2 | synthetic fixtures | no network/LLM/ROS required\nsocial_robot       respectful   violations=0 replay_equal=True\nsocial_robot       faulty       violations=3 replay_equal=True\nsocial_robot       always_stop  violations=0 replay_equal=True\nvirtual_roleplay   respectful   violations=0 replay_equal=True\nvirtual_roleplay   faulty       violations=3 replay_equal=True\nvirtual_roleplay   always_stop  violations=0 replay_equal=True\nReport: C:\\Users\\Iman\\AppData\\Local\\Temp\\relatiobench-registry-a2-dhveeczc\\core\\index.html\n",
+      "stderr": ""
+    }
+  ],
+  "registry_status": 200,
+  "distributions": [
+    {
+      "filename": "relatiobench-0.1.0a2-py3-none-any.whl",
+      "sha256": "51890524ad5f8b37eb63f2cd7163a8b970cc7e3de596a03ecd980d8c0f977513",
+      "upload_time": "2026-11-26T02:45:28.546142Z"
+    },
+    {
+      "filename": "relatiobench-0.1.0a2.tar.gz",
+      "sha256": "acaba3c2fb33e10438d64c82fbc595d462706e4a2719ad4c68438120480470ae",
+      "upload_time": "2026-11-26T02:45:29.696988Z"
+    }
+  ],
+  "status": "passed",
+  "repeat_equal": true,
+  "public_preview": [
+    {
+      "path": "",
+      "error": "('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+    },
+    {
+      "path": "chat-demo/before/index.html",
+      "error": "('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+    },
+    {
+      "path": "chat-demo/after/index.html",
+      "error": "('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+    }
+  ],
+  "scope": "Maintainer verification of exact public registry installation and synthetic fixtures; not independent adoption. No verified social post established by this check."
+}
