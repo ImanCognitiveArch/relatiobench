@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use RelatioBench, cite the software version and describe its synthetic-fixture limitations."
 type: software
 title: "RelatioBench: Replay the interaction. Inspect the decision."
-version: 0.1.0a1
-date-released: 2026-11-23
+version: 0.1.0a2
+date-released: 2026-11-26
 license: Apache-2.0
 authors:
   - family-names: Khorami

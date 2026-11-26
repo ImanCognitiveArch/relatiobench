@@ -13,6 +13,29 @@
 **Focus:** authored interaction scenarios for HRI research and virtual role-play.
 **Start here:** [comparison report](docs/demo/index.html) · [recorded CLI run](docs/assets/transcript.md) · [contract](docs/CONTRACT.md)
 
+## Find a boundary failure in context
+
+New in **0.1.0a2**: local annotated-chat audit, readable findings with source message IDs,
+and a before/after regression check. No account, upload, model key or runtime dependencies.
+
+```sh
+python -m pip install relatiobench==0.1.0a2
+relatiobench quickstart --output boundary-demo
+```
+
+Open `boundary-demo/before/index.html` and `boundary-demo/after/index.html`.
+A synthetic six-message conversation exposes one offending message with two rule findings.
+The corrected synthetic example retains task completion. This is a teaching example, not a live customer test.
+
+**Bring your own log:** copy the generated chat JSON, explicitly review the labels, then run
+`relatiobench audit my.chat.json --output my-audit`.
+Reports show the message, violated rule and suggested control change. Compare matched runs with
+`relatiobench compare before/audit.json after/audit.json`; increased violations or reduced eligible
+completion fail the check. Automatic intent classification and real human handoff are outside scope.
+
+[Full workflow and annotation contract](docs/CHAT_AUDIT.md) ·
+[First free pilot: scope and evaluator ask](docs/CHAT_AUDIT.md#first-evaluator--free-pilot)
+
 ## Architecture at a glance
 
 ```mermaid
@@ -35,20 +58,20 @@ External systems can export the documented trace format for scoring.
 
 A local Python workbench for replaying authored interaction scenarios and comparing observed policy behavior. The alpha includes a social-robot activity and a virtual role-play fixture, an independent trace scorer, and a self-contained HTML comparison.
 
-**Status:** core acceptance passed on local Linux/Python 3.12 and Windows/Python 3.11 + 3.14; six CI jobs passed on Linux/Windows × Python 3.11/3.12/3.14. Licensed under Apache-2.0. This is an engineering alpha; version 0.1.0a1 is published on PyPI and a fresh registry install/demo has been verified.
+**Status:** core acceptance passed on local Linux/Python 3.12 and Windows/Python 3.11 + 3.14; six CI jobs passed on Linux/Windows × Python 3.11/3.12/3.14. Licensed under Apache-2.0. This is an engineering alpha; version 0.1.0a1 is published and verified; 0.1.0a2 is the additive annotated-chat release.
 
 ## Install the verified alpha from PyPI
 
 Python 3.11 or newer. Use a virtual environment and pin the alpha version:
 
 ```sh
-python -m pip install relatiobench==0.1.0a1
+python -m pip install relatiobench==0.1.0a2
 relatiobench demo --output ./demo-output
 ```
 
 Open `demo-output/index.html`. There are no runtime dependencies, network calls, LLM keys, ROS installation or GPU requirements. The demo writes two scenarios × three policies as JSON traces and scores, plus a comparison report. Built-in fixtures are deterministic; the seed is retained in the run contract for future policies, not used as evidence of stochastic simulation.
 
-[PyPI release](https://pypi.org/project/relatiobench/0.1.0a1/) · [GitHub release and attached wheel](https://github.com/ImanCognitiveArch/relatiobench/releases/tag/v0.1.0a1). Exact-version registry install and demo evidence: [Windows verification](evidence/pypi-install-windows.json).
+[PyPI release](https://pypi.org/project/relatiobench/0.1.0a1/) · [GitHub release and attached wheel](https://github.com/ImanCognitiveArch/relatiobench/releases/tag/v0.1.0a1). Historical 0.1.0a1 exact-version registry evidence: [Windows verification](evidence/pypi-install-windows.json).
 
 ## What the comparison reveals
 

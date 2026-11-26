@@ -1,5 +1,5 @@
 """Local engineering experiments on authored, synthetic interaction events."""
-__version__ = "0.1.0a1"
+__version__ = "0.1.0a2"
 
 from .engine import replay
 from .schema import ValidationError, load_scenario

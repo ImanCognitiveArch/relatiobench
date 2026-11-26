@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "relatiobench"
-version = "0.1.0a1"
+version = "0.1.0a2"
 description = "Replay synthetic interaction scenarios and inspect policy behavior."
 readme = "README.md"
 license = "Apache-2.0"

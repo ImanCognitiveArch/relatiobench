@@ -1,3 +1,10 @@
+## 0.1.0a2 — 2026-11-26
+- Add explicit annotated-chat import and local audit reports with source message IDs and rule suggestions.
+- Add quickstart synthetic before/after examples; no natural-language intent inference.
+- Compare matched user text/events/labels and flag increased violation counts or lower eligible completion.
+- Keep trace schema 1 and scorer 1 unchanged; protect audit output from accidental overwrite.
+- First bounded evaluator pilot offered free; no clinical, handoff or commercial-outcome claims.
+
 # Changelog
 
 ## 0.1.0a1 — 2026-11-23
